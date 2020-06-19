@@ -23,7 +23,7 @@
 // console.log(`Hi, ${1}`)
 // console.log(`Hi, ${"myWallet"}`)
 // console.log(`Hi, ${myWallet}`)
-    
+
 
 // let myName = 'Kraisit.ch'
 // let myAge = 29
@@ -58,24 +58,33 @@
 
 
 let currData = prompt('Your number ?')
-
-if(!Number(currData)) {
+let numScore = 0
+if (!Number(currData)) {
     alert('Data is not number')
-}else{
-    if (currData >= 80) {
+} else {
+    numScore = parseInt(currData)
+    if (numScore >= 80) {
         alert('A')
-    }else if(currData >=70 && currData < 80){
+    } else if (numScore >= 70 && numScore < 80) {
         alert('B')
-    }else if(currData >=60 && currData < 70){
+    } else if (numScore >= 60 && numScore < 70) {
         alert('C')
-    }else if(currData >=50 && currData < 60){
+    } else if (numScore >= 50 && numScore < 60) {
         alert('D')
-    }else if(currData < 50){
+    } else if (numScore < 50) {
         alert('F')
-    }else {
+    } else {
         alert('NA')
     }
 }
 
 
-
+let currAge = prompt('How old are you?')
+let price = 0
+if (!Number(currAge)) {
+    alert('Data is not number')
+} else {
+    let numAge = parseInt(currAge)
+    let msg = (numAge < 18) ? price = 2000 : price = 3500;
+    alert(msg)
+}
